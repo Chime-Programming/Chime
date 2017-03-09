@@ -37,7 +37,7 @@ for (item in tests){
   }else{
     print("is a list");
   };
-  print("with length of " + len(item));#{or item.length()}#
+  print("with length of " + len(item));#or item.length()
 };
 
 
@@ -88,7 +88,10 @@ print(7%2);
 
 print(Int(.2+4.9))
 
-print("the answer is" + str(25));#{or item.string()}#
+print("the answer is" + str(25));#{
+                                    or item.string()
+                                    curly brackets make the commit multiline 
+                                    }#
 
 
 while (running){ 
@@ -96,7 +99,7 @@ while (running){
   if (foo(user_input)){
     pass;
   }elif (user_input.lower() is "exit"){
-    running.invert();#{or }#
+    running.invert();#or
   }elif (user_input.lower() is "user"){
     if (name is "himehowareu"){
       print( "master " + name);

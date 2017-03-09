@@ -1,11 +1,11 @@
-string hi = "hello";
-int age = 1;
-float percent = 1.8;
-list tests = [string "act",int 24,float .3];
-bool running = True;
-string name ;
-string user_input;
-dict book = {string "name":string "red", string "age": int 18};
+String hi = "hello";
+Int age = 1;
+Float percent = 1.8;
+List tests = [String "act",Int 24,Float .3];
+Bool running = True;
+String name;
+String user_input;
+Dict book = {String "name":String "red", String "age": Int 18};
 
 age @ book["age"];
 
@@ -26,14 +26,14 @@ if (name is "himehowareu"){
 
 for (item in tests){
   print(item);
-  if(item is int){
+  if(item is Int){
     print("is an intinger");
-  }elif(item is float){
+  }elif(item is Float){
     print("is a float");
-  }elif(item is string){
+  }elif(item is String){
     print("is a string");
-  }elif(item is bol){
-    print("is a bol");
+  }elif(item is Bool){
+    print("is a bool");
   }else{
     print("is a list");
   };
@@ -41,24 +41,24 @@ for (item in tests){
 };
 
 
-list path = "c:/user/himehowareu/desktop".)split("/");
+List path = "c:/user/himehowareu/desktop".)split("/");
 
-int place = "abc".find("c");
+Int place = "abc".find("c");
 
-list keys;
+List keys;
 key = book.key();
 
 
-obj name(){
-  string name = "default";
-  def foo(){
+obj person(){
+  String name = "default";
+  def Nothing foo(){
     print(parent.name);
     parent.times += 1;
   };
-  int times = 0;
+  Int times = 0;
 };
 
-name john;
+person john;
 john.name = "john";
 john.foo();
 john.foo();
@@ -66,7 +66,7 @@ john.foo();
 john.foo();
 print(john.times);
 
-def bool foo(string name){
+def Bool foo(string name){
   if (name is ""){
     return(False);
   }else{
@@ -75,7 +75,7 @@ def bool foo(string name){
 };
 
 
-tests.append(dict {string "d",int 4});
+tests.append(dict {String "d",Int 4});
 
 print(int("3")+4);
 print(2-1);
@@ -86,7 +86,7 @@ print(7.0/2);
 print(2*8);
 print(7%2);
 
-print(int(.2+4.9))
+print(Int(.2+4.9))
 
 print("the answer is" + str(25));#{or item.string()}#
 
